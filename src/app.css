@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rajdhani:wght@300&display=swap");
+
+.flex-col-centre-centre {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.App {
+   height: 100vh;
+   width: 100vw;
+}
+
+#page {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   font-family: "Open Sans", sans-serif;
+   color: rgb(195, 195, 195);
+}
+
+.flex-item {
+   flex: 1;
+   color: rgb(131, 131, 131);
+   background: transparent;
+   height: 100%;
+   width: 100%;
+   transition: background-color 0.4s, flex 0.2s ease-out;
+   z-index: 1;
+}
+
+.flex-item span:hover {
+   color: rgb(183, 204, 209);
+   cursor: pointer;
+}
+
+#page .flex-item.active {
+   flex: 30;
+   border-radius: 0;
+   background: #272b34;
+   box-shadow: 0 0 20px 14px #1c2024;
+   color: rgb(195, 195, 195);
+   border: none;
+   z-index: -1;
+}
+
+#page .flex-item.active span {
+   color: rgb(217, 217, 217);
+}
+
+#page .panel-header {
+   font-size: 2rem;
+   padding: 10px;
+}
+
+#study-list {
+   padding: 2%;
+   overflow: auto;
+}
